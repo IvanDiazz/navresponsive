@@ -6,8 +6,61 @@
 
 
 .nav{
-	width: 90%;
+	width: 95%;
 	display: flex;
+	padding: 15px 20px;
+	background-color: #2E198C;
+	margin: auto;
+	justify-content:space-between;
+}
+
+.nav h1{
+	color: white;
+	font-family: monospace;
+	font-size: 20px;
+}
+
+.nav .links{
+	display: flex;
+	width: 45%;
+	justify-content: space-between;
+	align-content: center;
+	align-items: center;
+}
+
+.nav .links a{
 	padding: 5px;
-	background-color: black;
+	color: #D97527;
+	text-decoration: none;
+	font-family: 'Mukta', sans-serif;
+
+}
+
+.nav .links a:hover{
+	background-color: #3611D9;
+	border-radius: 3px;
+	color: white;
+
+}
+
+@media (max-width: 630px){
+	.nav{
+		flex-direction: column;
+		justify-content: space-between;
+		align-content: center;
+		align-items: center;
+	}
+
+	.nav .links{
+		width: 100%;
+		flex-direction: column;
+		justify-content: space-between;
+		align-content: center;
+		align-items: center;
+	}
+
+	nav .links a{
+		width: 100%;
+	}
+
 }
